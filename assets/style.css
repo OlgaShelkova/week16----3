@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+#registrationForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(85, 83, 83, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+label {
+  display: block;
+  margin: 5px 5px;
+  color: #7071E8;
+  text-align: left;
+}
+
+input,
+select {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: rgba(58, 57, 57, 0.5);
+  }
+
+/* Стили для всех радиокнопок здесь */
+input[type="radio"] {
+  display: flex;
+  align-items: start;
+  width: 20%;
+}
+
+/*стили для выбора пола*/
+label[for="male"],
+label[for="female"] {
+  width: 40%;
+  /* Дополнительные стили по необходимости */
+}
+
+/* Стили для поля ввода имени */
+  #name {
+    text-transform: capitalize;
+  }
+  
+  /* Стили для поля ввода email */
+  #email {
+    text-transform: lowercase;
+  }
+    
+  /* Стили для поля выбора профессии */
+  #profession {
+    width: 100%; 
+    color: #9EB8D9;
+  }
+
+button:hover {
+    background: #7071E8;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #7071E8,
+                0 0 25px #7071E8,
+                0 0 50px #7071E8,
+                0 0 100px #7071E8;
+}
+
+  

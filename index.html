@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" >
+		<title>Форма</title>
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="stylesheet" href="assets/normalize.css" >
+	</head>
+		<body>
+      
+    <form id="registrationForm" action="submit_form.php" method="post" novalidate>
+        <h2>Форма регистрации</h2>
+    <!-- Поле ввода имени -->
+    <label for="name">Имя:</label>
+    <input type="text" id="name" class="field" name="name" placeholder="Введите ваше имя" required >
+    <span class="error-msg"></span>
+
+    <!-- Поле ввода электронной почты -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="field"name="email" placeholder="Введите ваш email" required>
+    <span class="error-msg"></span>
+
+    <!-- Поле ввода возраста -->
+    <label for="age">Возраст:</label>
+    <input type="number" id="age" class="field" name="age" placeholder="Введите ваш возраст" required>
+    <span class="error-msg"></span>
+
+    <!-- Поле выбора пола -->
+    <label>Пол:</label>
+    <input type="radio" id="male" class="field" name="gender" value="male" checked>
+    <label for="male">Мужчина</label>
+    <input type="radio" id="female" class="field" name="gender" value="female">
+    <label for="female">Женщина</label>
+    <span class="error-msg"></span>
+
+    <!-- Поле выбора профессии -->
+    <label for="profession">Профессия:</label>
+    <select id="profession" name="profession" required>
+      <option value="" disabled selected>Выберите профессию</option>
+      <option value="doctor">Врач</option>
+      <option value="programmer">Программист</option>
+      <option value="teacher">Учитель</option>
+      <option value="designer">Дизайнер</option>
+      <option value="engineer">Инженер</option>
+      <option value="salesperson">Продавец</option>
+      <option value="other">Другое</option>
+      <span class="error-msg"></span>
+    </select>
+    <!-- Поле ввода пароля -->
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" class="field" name="password" placeholder="Введите пароль">
+    <span class="error-msg"></span>
+            
+    <!-- Поле повтора пароля -->
+    <label for="confirmPassword">Повторите пароль:</label>
+    <input class="field" type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль">
+    <span class="error-msg"></span>
+            
+    <!-- Поле checkbox для согласия пользователя -->
+        <label for="consent">Я согласен с обработкой данных:</label>
+        <input type="checkbox" id="consent" class="field" name="consent" required>
+        <span id="agree-error-message"></span>
+            
+    <!-- Кнопка отправки формы -->
+    <button type="submit" id="submitBtn">Отправить</button>
+    </form>
+    <script src="week16.js"></script>
+		</body>
+	</html>
